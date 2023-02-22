@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Tipo do dado</title>
 </head>
+
 <body>
     <script>
-        let dado = prompt("Digite algo: ","");
-        if(confirm("Deseja verificar o tipo do dado informado?")){
-            
+        let dado = prompt("Digite algo: ", "");
+        if (confirm("Deseja verificar o tipo do dado informado?")) {
+
             if (!isNaN(dado)) {
                 tipoDado = parseInt(dado);
-                document.write("O tipo do dado informado é: "+ typeof(tipoDado));
+                document.write("O tipo do dado informado é: " + typeof (tipoDado));
             }
             else {
-                if (dado == "true" || dado == "false"){
+                if (dado == "true" || dado == "false") {
                     tipoDado = false;
-                    document.write("O tipo do dado é: "+ typeof(tipoDado));
+                    document.write("O tipo do dado é: " + typeof (tipoDado));
                 }
                 else {
-                    document.write("O tipo do dado é: "+ typeof(dado));
+                    document.write("O tipo do dado é: " + typeof (dado));
                 }
             }
-
         }
-        else{
+        else {
             document.write("Obrigado por visitar nossa página!");
         }
-
     </script>
-    
+    <form name="form1">
+        <p style="padding-top: 2%;">
+            <a href="https://evaananias.github.io/Laboratorio-Engenharia/"><input type="button" class="btn btn-primary" name="habi" value="Voltar a pagina anterior" id="habi"><a>
+        </p>
+    </form>
 </body>
+
 </html>
