@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipo do dado</title>
+</head>
+<body>
+    <script>
+        let dado = prompt("Digite algo: ","");
+        if(confirm("Deseja verificar o tipo do dado informado?")){
+            
+            if (!isNaN(dado)) {
+                tipoDado = parseInt(dado);
+                document.write("O tipo do dado informado é: "+ typeof(tipoDado));
+            }
+            else {
+                if (dado == "true" || dado == "false"){
+                    tipoDado = false;
+                    document.write("O tipo do dado é: "+ typeof(tipoDado));
+                }
+                else {
+                    document.write("O tipo do dado é: "+ typeof(dado));
+                }
+            }
+
+        }
+        else{
+            document.write("Obrigado por visitar nossa página!");
+        }
+
+    </script>
+    
+</body>
+</html>
