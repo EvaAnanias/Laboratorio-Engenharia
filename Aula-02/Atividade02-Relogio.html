@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Relogio</title>
+    <title>Relógio</title>
 </head>
 
 <body>
@@ -24,8 +24,6 @@
             const horaCompleta = `${horaFormatada}:${minutoFormatado}:${segundoFormatado}`;
             relogioElement.textContent = `${horaCompleta}`;
         }
-
-        // atualizar a cada segundo
         setInterval(atualizarRelogio, 1000);
 
     </script>

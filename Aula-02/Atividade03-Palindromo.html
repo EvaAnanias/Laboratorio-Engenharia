@@ -16,10 +16,7 @@
 
     <script>
         function Palindromo(texto) {
-            // remover espaços em branco e transformar em letras minúsculas
             texto = texto.replace(/\s/g, "").toLowerCase();
-
-            // comparar o texto com sua versão invertida
             return texto === texto.split("").reverse().join("");
         }
 
@@ -32,6 +29,5 @@
                  : "O texto não é um palíndromo.";
             alert(mensagem);
         });
-
     </script>
 </body>
